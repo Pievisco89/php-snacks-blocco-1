@@ -10,19 +10,24 @@
   <h1>Snack 4</h1>
 
   <?php
-
-    $arrNumeri = [];
-  
-    for($i = 0; $i < 15; $i++){
-      $numero = rand(1, 100);
-      $arrNumeri[] = $numero;
-      if(!in_array($numero, $arrNumeri)){
-        $arrNumeri[] = $numero;
-      }
-      
-    };
     
-    var_dump($arrNumeri);  
+    function getArrayNumberRandom($min, $max, $nItems){
+
+      $arrNumber = [];
+
+      while (count($arrNumber) < $nItems){
+        $number = rand($min, $max);
+
+        if(!in_array($number, $arrNumber)){
+          $arrNumber[] = $number;
+        }
+
+      }
+
+      return $arrNumber;
+    }
+
+    var_dump(getArrayNumberRandom(1, 100, 15));
 
   ?>
 

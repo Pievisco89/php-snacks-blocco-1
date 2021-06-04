@@ -15,11 +15,14 @@
   
     for($i = 0; $i < 15; $i++){
       $numero = rand(1, 100);
+      $arrNumeri[] = $numero;
       if(!in_array($numero, $arrNumeri)){
-        $arrNumeri = $numero . "<br> ";
-        echo $arrNumeri;
+        $arrNumeri[] = $numero;
       }
-    }
+      
+    };
+    
+    var_dump($arrNumeri);  
 
   ?>
 

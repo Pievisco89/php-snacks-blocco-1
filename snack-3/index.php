@@ -58,7 +58,7 @@
     <?php foreach($posts as $key => $value){ ?>
         
       <li>
-        <?php echo $key ?>
+        <?php echo "$key:" ?>
         <ul>
           <?php foreach($value as $message){ ?>
             <li> <?php echo $message['title'] ?> </li>

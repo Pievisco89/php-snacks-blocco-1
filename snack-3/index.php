@@ -74,10 +74,6 @@
       
   
   </ol>
-  
-      <!-- /* echo "$key <br>";
-        foreach($value as $text){
-          echo $text['title'];
-        }; */ -->
+
 </body>
 </html>
